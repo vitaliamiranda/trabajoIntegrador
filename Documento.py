@@ -1,0 +1,2 @@
+def documento():
+    print("hola")
