@@ -1,8 +1,11 @@
-def documento():
-    print("hola")
+class Documento:
+    def __init__(self,id: int,contenido:dict):
+        self.id = id
+        self.contenido = contenido if contenido != None else {}
 
-def documento_1():
-    print("hola")
+    def set_documento(self, contenido: dict) -> None:
+        self.contenido = contenido
 
-def documento_2():
-    print("hola")
+    def get_documento(self) -> dict:
+        return self.contenido
+    
